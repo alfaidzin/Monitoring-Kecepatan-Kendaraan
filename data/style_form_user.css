@@ -1,0 +1,111 @@
+*{
+	margin: auto;
+	font-family: sans-serif, Tahoma, Arial;
+}
+
+
+
+section .content{
+	width: 1100px;
+}
+
+/* bagian nav bar */
+#menu {
+	width: 100%
+	height: 70px;
+	line-height: 70px;
+	background-color: #333;
+}
+.navbar{
+	width: 100%;
+	overflow: hidden;
+	height: 70px;
+	line-height: 70px;
+}
+
+.btn_login{
+	width: 120px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	display: block;
+}
+.right a{
+	float: right;
+	display: inline!important;
+}
+
+.right a:hover{
+	list-style: none;
+	background: black;
+}
+.logo{
+	padding-top: 15px;
+	width: 35%;
+}
+
+.left{
+	float: left;
+}
+
+/* bagian form*/
+.form{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+form input{
+	padding: 10px;
+	width: 93%;
+}
+.form h1{
+	background: #333;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Bagian utama & section 1*/
+
+#section1{
+	background-color: grey;
+	height: 700px;
+	padding-top:100px;
+}
+.btn_dashboard{
+  padding-top: 50px;
+  border: none;
+  background-color: #333;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial;
+  color: white;
+  text-decoration: none;
+}
+.btn_dashboard:hover{
+	background:	black;
+	font-family: Arial;
+	text-decoration: none;
+}

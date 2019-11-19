@@ -1,0 +1,37 @@
+.ket {
+	text-align: center;
+	padding-top: 220px;
+	padding-bottom: 220px;
+	background-size: cover;
+	background-image: url('../gambar/OE.jpg');
+}
+.ket a{
+color: white;
+}
+.ket1 {
+	background-color: grey;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin-left: 300px;
+	margin-right: 300px;
+}
+.ket a{
+	text-decoration: none;
+	font-size: 20pt;
+}
+.ket p {
+	font-size: 30pt;
+}
+.kotak {
+	background-color: red;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}
+
+.kotak:hover {
+	background-color: yellow;
+	margin-left: 200px;
+	margin-right: 200px;
+
+}

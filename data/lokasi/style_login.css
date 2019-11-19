@@ -1,0 +1,75 @@
+*{
+	margin: auto;
+	font-family: sans-serif, Tahoma, Arial;
+}
+
+section .content{
+	width: 1100px;
+}
+
+/* bagian nav bar */
+#menu {
+	width: 100%
+	height: 70px;
+	line-height: 70px;
+	background-color: #333;
+}
+.navbar{
+	width: 100%;
+	overflow: hidden;
+	height: 70px;
+	line-height: 70px;
+}
+
+.selamat{
+	width: auto;
+	height: 70px;
+	line-height: 70px;
+	color: white;
+	float: right;
+
+}
+
+.logo{
+	padding-top: 15px;
+	width: 35%;
+}
+
+.left{
+	float: left;
+}
+/*bagian login*/
+.form{
+	font: 95% Arial, Helvetica, sans-serif;
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+}
+form input{
+	padding: 10px;
+	width: 94%;
+}
+.btn_home{
+	padding-top: 10px;
+	color:blue;
+	text-decoration: none;
+}
+.form h1{
+	background: #333;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+
+/*Background*/
+#section1{
+	background-image: url('gambar/backgound1.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 600px;
+	padding-top: 200px;
+}

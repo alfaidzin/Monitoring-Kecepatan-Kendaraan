@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Tambah User</title>
+</head>
+<body>
+		<div id="container">
+						<section id="menu">
+							<div class="content">
+								<div class="navbar">
+									<div class="left">
+											<img class="logo" src="gambar/logo-sampah2.png">
+									</div>
+									<div class="right">
+										<a class="btn_login" href="logout.php">Logout</a>
+										<a class="btn_login" href="tampil.php">List User</a>
+										<a class="btn_login" href="dashboard.php">Dashboard</a>
+									</div>
+								</div>	
+							</div>
+						</section>
+
+				<section class="utama" id="section1">
+					<div class="content">
+						<div class="form">
+						<h1>Form Tambah User baru</h1>
+						<form action="tambah_user.php" method="post" enctype="multipart/form-data">
+							<input type="text" name="username" placeholder="Username"><p/><br/>
+							<input type="text" name="nama_lengkap" placeholder="Nama Lengkap"><p/><br/>
+							<input type="password" name="password" placeholder="Password"><p/><br/>
+							<input type="text" name="no_telp" placeholder="Nomor Telfon"><p/><br/>
+							<input style="width:100%;" type="submit" value="Simpan">	
+						</form>
+						</div>
+					</div>
+				</section>
+
+		</div>
+		<link rel="stylesheet" type="text/css" href="style_form_user.css">
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
