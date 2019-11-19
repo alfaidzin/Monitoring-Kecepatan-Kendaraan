@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Monitoring | B1 kelompok 5</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(
+			function(){
+				function getRandom(min,max){
+					return (Math.random()*(max-min+1)+min);
+				}	
+
+				var time = setInterval(
+						function(){
+							$.ajax(
+								{
+								url:'reload.php',
+								data:{kecepatan:getRandom(0,200)},
+								method:'post',
+								dataType:'json',
+								success: function(response){
+								$('#kecepatan').html(response.kecepatan);
+								$('#kategori').html(response.kategori);
+								$('#riwayat').html(response.riwayat);
+										}	
+									}	
+								);
+						},5000);
+			}
+		);
+	</script>
+</head>
+<body>
+
+<div id="container">
+	<section id="menu" class="no-sticky"> 
+		<div class="content">
+			<div class="left">
+					<ul>
+						<li><a href="index.html">Beranda</a></li>
+						<li><a href="../data/tampil.php">Data</a></li>
+						<b><li><a href="../monitoring/generateDataDB.php">Monitoring</a></li></b>
+					</ul>
+				</div>
+			<div class="right">
+				<a class="btn btn-white">OPERATOR</a>
+				<a href="../logout.php" class="btn btn-white">LOGOUT</a>
+			</div>
+		<div class="clear"></div>
+		</div>
+	</section>
+				<section class="bagan0" id="section0">
+					<div class="content">
+
+	<a href="fc01.html" class="grafik"><b>Lihat Grafik</a></b>
+	</div>
+		<h1>Kecepatan saat ini</h1>
+		kecepatan:<strong id='kecepatan'>Memuat data...</strong><br>
+		Kategori:<strong id='kategori'>Memuat data...</strong><br>
+		<h1>Riwayat Kecepatan:</h1>
+		<div id='riwayat'>
+			<table border="1" rules="all" cellpadding="15">
+				<tr style="background-color: gray;">
+					<th>#</th>
+					<th>Kecepatan</th>
+					<th>Kategori</th>
+					<th>Waktu</th>
+				</tr>
+				<tr>
+					<td colspan="4">Memuat Data</td>
+				</tr>
+			</table>
+		</div>
+
+
+				</section>
+</div>				
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="javascript/script.js"></script>
+
+</body>
+</html>

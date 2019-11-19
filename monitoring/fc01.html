@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 01</title>
+	<script type="text/javascript" src="pustaka_FC/js/fusioncharts.js"></script>
+	<script type="text/javascript" src="pustaka_FC/js/themes/fusioncharts.theme.ocean.js"></script>
+	<script type="text/javascript">
+		FusionCharts.ready( function(){
+				var G = new FusionCharts(
+					{
+						"type":"line",
+						"renderAt":"lokasiA",
+						"width":"800",
+						"height":"500",
+						"dataFormat":"json",
+						"dataSource":{
+							"chart":{
+								"caption":"Monitoring",
+								"subCaption":"Kecepatan Kendaraan",
+								"xAxisName":"month",
+								"yAxisName":"revenues($)",
+								"theme":"ocean"
+							},
+							"data":[
+									{"label":"jan","value":"60"},
+									{"label":"feb","value":"105"},
+									{"label":"mar","value":"98"},
+									{"label":"apr","value":"200"}
+								]
+						}
+					}
+				)
+			G.render();
+			}
+		)
+	</script>	
+</head>
+<body>
+	<a href="generateDataDB.php">Kembali</a>	
+	<div id="lokasiA"> </div>
+</body>
+</html>
